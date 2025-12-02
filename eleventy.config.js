@@ -8,7 +8,20 @@ function sortByOrder(a, b) {
 }
 
 export default function(eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin, {
+    navigationOptions: {
+      listElement: "ul",
+      listItemElement: "li",
+      listClass: "toc",
+      listItemClass: "",
+      listItemHasChildrenClass: "",
+      activeListItemClass: "",
+      anchorClass: "",
+      activeAnchorClass: "",
+      activeKey: "",
+      showExcerpt: false
+    }
+  });
   addFilters(eleventyConfig);
 
   eleventyConfig.addWatchTarget("./css/");
