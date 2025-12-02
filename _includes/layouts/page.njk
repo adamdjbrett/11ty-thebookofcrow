@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language | default('en') }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div>
+    {% if collections.all and collections.all | length %}
+    <nav>
+      <details class="toc">
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+      </details>
+    </nav>
+    {% endif %}
+
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <a href="/">home</a>
+      <span aria-hidden="true">|</span>
+      <a href="/about">about</a>
+      <span aria-hidden="true">|</span>
+      <a href="/sitemap.xml">sitemap</a>
+    </footer>
+  </div>
+</body>
+</html>

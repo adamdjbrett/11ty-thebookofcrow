@@ -1,0 +1,20 @@
+{
+  "name": "11ty-thebookofcrow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Eleventy build for The Book of Crow",
+  "type": "module",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --serve --quiet"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "zod": "^4.1.13",
+    "zod-validation-error": "^5.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^1.0.4"
+  }
+}

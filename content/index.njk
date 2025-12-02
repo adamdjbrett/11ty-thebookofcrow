@@ -1,0 +1,17 @@
+---
+layout: page.njk
+title: The Book of Crow
+description: here you will find a record of tips, tricks, and the mentality with which i approach life.
+eleventyNavigation:
+  key: /index/
+  title: contents
+  order: 0
+---
+
+{% set sections = collections.homeSections or [] %}
+
+{% for section in sections %}
+  {% set heading = section.data.headingLevel or 'h2' %}
+  <{{ heading }} id="{{ section.data.slug }}">{{ section.data.heading or section.data.title }}</{{ heading }}>
+  {{ section.templateContent | safe }}
+{% endfor %}
