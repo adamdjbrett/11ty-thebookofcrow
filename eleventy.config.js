@@ -1,3 +1,4 @@
+import { IdAttributePlugin } from "@11ty/eleventy";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import addFilters from "./_config/filters.js";
 
@@ -8,6 +9,7 @@ function sortByOrder(a, b) {
 }
 
 export default function(eleventyConfig) {
+  eleventyConfig.addPlugin(IdAttributePlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin, {
     navigationOptions: {
       listElement: "ul",
