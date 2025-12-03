@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^1.0.4"
+  },
+  "bob": {
+    "directory": "_site"
   }
 }
