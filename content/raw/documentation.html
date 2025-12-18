@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://thebookofcrow.neocities.org/documentation -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>Technical Documentation Page</title>
 
     <style>
-      html{font-family: arial; margin: auto;}
+      html{font-family: arial; margin: auto; height: 100%;}
+      body{margin:0; min-height:100%;}
 
       @media screen and (min-width: 601px) {
-      #navbar{ border: 1px #ccc solid; border-radius: 10px; margin:10px;padding:10px; background-color:#eee; display:flex; position:fixed; top:0; left: 0; width: 200px; height:100%; display: block;}
+      #navbar{ border: 1px #ccc solid; border-radius: 10px; margin:10px;padding:10px; background-color:#eee; display:flex; position:fixed; top:0; left: 0; width: 200px; height:100%; display: block; overflow-y:auto;}
 
-         #main-doc{position:fixed; top:0; left: 250px}
+        #main-doc{margin-left: 250px; padding:20px; min-height:100vh;}
 
          nav a{display:block; padding:0.5em; border: 1px solid black; text-decoration:none;}
 
@@ -51,11 +51,12 @@
     <main id="main-doc">
 
       <nav id="navbar"><header>Navigation</header>
-      <a href="https://thebookofcrow.neocities.org/documentation#Subject_One" class="nav-link">Subject One</a>
-      <a href="https://thebookofcrow.neocities.org/documentation#Subject_Two" class="nav-link">Subject Two</a>
-      <a href="https://thebookofcrow.neocities.org/documentation#Subject_Three" class="nav-link">Subject Three</a>
-      <a href="https://thebookofcrow.neocities.org/documentation#Subject_Four" class="nav-link">Subject Four</a>
-      <a href="https://thebookofcrow.neocities.org/documentation#Subject_Five" class="nav-link">Subject Five</a>
+      <a href="/raw/documentation/" class="nav-link">Home</a>
+      <a href="#Subject_One" class="nav-link">Subject One</a>
+      <a href="#Subject_Two" class="nav-link">Subject Two</a>
+      <a href="#Subject_Three" class="nav-link">Subject Three</a>
+      <a href="#Subject_Four" class="nav-link">Subject Four</a>
+      <a href="#Subject_Five" class="nav-link">Subject Five</a>
       </nav>
 
 
